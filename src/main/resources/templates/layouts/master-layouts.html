@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      >
+<head>
+    <th:block th:replace="~{fragment/meta}"></th:block>
+
+    <title layout:title-pattern="$CONTENT_TITLE - $LAYOUT_TITLE">Song</title>
+
+    <th:block th:replace="~{fragment/style}"></th:block>
+
+</head>
+<body>
+
+    <div th:replace="~{fragment/navbar}"></div>
+
+    <main layout:fragment="main-content">
+      <!--master page -->
+      <!--  individual web page contents-->
+      <h1>From sub layout</h1>
+
+    </main>
+
+    <div th:replace="~{fragment/footer}"></div>
+
+    <th:block th:replace="~{fragment/script}"></th:block>
+
+</body>
+</html>
